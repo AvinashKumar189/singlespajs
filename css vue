@@ -1,0 +1,58 @@
+<template>
+  <div class="hello">
+    <h1>Hello Vue</h1>
+    <h3>This video is rendered in Vue App</h3> 
+    <div class="youtube">
+    <iframe width="700" height="350" src="https://www.youtube.com/embed/lEi_XBg2Fpk"></iframe>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h3 {
+  text-align: center;
+  color: rgb(83, 238, 143);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+
+* {
+  font-family : 'Montserrat'
+}
+
+h1 {
+  text-align: center;
+}
+
+.youtube {
+  text-align: center;
+}
+</style>
+
+
+
+-----------------------------------------------
+
+<template>
+  <img style="padding-left : 700px;" alt="Vue logo" src="./assets/logo.png" >
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
+</template>
