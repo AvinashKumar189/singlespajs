@@ -1,0 +1,45 @@
+import React from "react";
+
+const divStyle = {
+  textalign:'right',
+  color: 'coral',
+  backgroundColor: 'Black',
+  padding: '15px',
+  fontFamily: 'Montserrat', 
+  
+};
+
+  const button = {
+    margin: '10px',
+    padding: '10px 20px',
+    fontFamily: 'Montserrat',
+    border: 'none',
+    borderRadius: '4px',
+    background: '#000',
+    color: 'coral',
+    fontSize: '14px',
+    cursor: 'pointer',
+  
+
+};
+
+const wrapper = {
+  display: 'flex',
+  alignItems: 'right',
+  justifyContent: 'right',
+
+};
+
+export default function Root(props) {
+  return <section>
+            <h1 style={divStyle}>Hello React!</h1>
+            <div style={wrapper}>
+            <button style={button}>Home</button>
+            <button style={button}>About Us</button>
+            <button style={button}>Contact Us</button>
+            <button style={button}>New Products</button>
+            </div>
+            <hr></hr>
+            
+  </section>;
+}
